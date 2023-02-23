@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  
+    <title>Daily Scrum</title>
+</head>
+<body>
+  
+  <div>
+    <div id="sonido" style="display: none;">
+      <iframe src="sonido/ruleta.mp3" id="audio"></iframe>
+
+    </div>
+  </div>
+    <div id="containerExample">
+        <h1 style="text-align: center;">Daily Scrum</h1>
+        <p style="text-align: center;">Squad Los Trovadores Criollos</p> 
+
+       
+    </div>
+    <div class="form-inline">
+      <div id="field_wrapper">
+        <div class="my-class-form-control-group">
+          <input type="text" class="form-control mr-2" name="txtName" id="txtName" onkeypress="pulsar(event)" placeholder="Agregar participante" />
+          <button type="button" class="btn btn-primary" style="height:40px;" id="btnAgregar" >+</button>
+          <div>
+            <form name="myForm" id="myForm" style="display: none;">
+              <input name="myInput" class="form-control mr-2" type="file">
+            </form>
+          </div>
+          
+          <button type="button" class="btn btn-default" style="height:40px;" id="btnExaminar">...</button>
+        </div>
+       </div>
+    </div>
+    <br>
+   
+    <div id="container" class="row contenedor">
+    </div>  
+    <br>
+    <div class="row">
+      <button class="btn btn-primary border col-6" style="width:100%; display: none;" id="btnGirar">Sortear participante</button> 
+    </div>
+    <br>
+    <div class="row">
+      <span style="text-align: center;"><img  id="spinner" height="50px" width="50px" style="display: none;" ></span>
+      <span id="timer" style="text-align: center; display: none;">3</span>
+    </div>
+
+    <div id="divCounter" class="form-inline contenedor" style="display: none;">
+      <div id="field_wrapper">
+        <div class="my-class-form-control-group">
+            Counter:&nbsp; <span id="playtimer">00:00</span>&nbsp;&nbsp; 
+          <button type="button" class="btn btn-success" id="btnPlayTimer" >play</button>
+          <button type="button" class="btn btn-danger" id="btnStopTimer" style="display:none;" >stop</button>
+        </div>
+       </div>
+    </div>
+
+    <br>
+    <div id="seleccion">
+    </div>     
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
+  
+</html>
